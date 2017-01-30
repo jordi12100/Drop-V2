@@ -456,11 +456,12 @@
 			isa = PBXGroup;
 			children = (
 				609E93B2A53D763E3CD32E19 /* clipboard+interface.hpp */,
-				609E946EA7EF004689E37477 /* notificationManager+interface.hpp */,
 				609E9A722FC955538F394E2D /* keybinder+base.hpp */,
+				609E946EA7EF004689E37477 /* notificationManager+interface.hpp */,
 				609E9826D4AA70D5C3E5148F /* screenshot+base.hpp */,
 			);
 			name = interface;
+			path = interface;
 			sourceTree = "<group>";
 		};
 		609E92BA7FEDD127A4DBF1F0 /* Frameworks */ = {
@@ -595,6 +596,7 @@
 				609E9B61CF63EA7216ADD4CA /* apple */,
 			);
 			name = platform;
+			path = platform;
 			sourceTree = "<group>";
 		};
 		609E99BCA88CB26BE7DF019F /* platform */ = {
@@ -603,40 +605,43 @@
 				609E9F769277C5B3E1AF6F37 /* apple */,
 			);
 			name = platform;
+			path = platform;
 			sourceTree = "<group>";
 		};
 		609E9B61CF63EA7216ADD4CA /* apple */ = {
 			isa = PBXGroup;
 			children = (
+				609E9205120BA6F262FFD5AB /* AppleUserNotificationManager.m */,
 				609E9CB5FFE12164469ED2DE /* clipboard+apple.mm */,
 				609E943BECF1B9DE64BAC614 /* keybinder+apple.mm */,
 				609E9A53FE049938DAC06E8A /* notificationManager+apple.mm */,
-				609E9205120BA6F262FFD5AB /* AppleUserNotificationManager.m */,
 				609E9DBCEAD3D7ED4F155516 /* screenshot+apple.mm */,
 			);
 			name = apple;
+			path = apple;
 			sourceTree = "<group>";
 		};
 		609E9F769277C5B3E1AF6F37 /* apple */ = {
 			isa = PBXGroup;
 			children = (
+				609E99B2964A8B1361BA0D8B /* AppleUserNotificationManager.h */,
+				609E9D0EB9ECB2C844EDFF3F /* clipboard+apple.hpp */,
 				609E9988A8BF7F4A8475A331 /* keybinder+apple.hpp */,
 				609E90A646757AA29B5D776E /* notificationManager+apple.hpp */,
-				609E9D0EB9ECB2C844EDFF3F /* clipboard+apple.hpp */,
-				609E99B2964A8B1361BA0D8B /* AppleUserNotificationManager.h */,
 				609E93A052F6C5BF39122731 /* screenshot+apple.hpp */,
 			);
 			name = apple;
+			path = apple;
 			sourceTree = "<group>";
 		};
 		8D92D31A1D5FA4EA0026C441 = {
 			isa = PBXGroup;
 			children = (
-				8D92DE3F1D6098150026C441 /* vendor */,
+				609E92BA7FEDD127A4DBF1F0 /* Frameworks */,
+				8D92D3241D5FA4EA0026C441 /* Products */,
 				8D92D32E1D5FA5710026C441 /* headers */,
 				8D92D32F1D5FA5750026C441 /* source */,
-				8D92D3241D5FA4EA0026C441 /* Products */,
-				609E92BA7FEDD127A4DBF1F0 /* Frameworks */,
+				8D92DE3F1D6098150026C441 /* vendor */,
 			);
 			sourceTree = "<group>";
 		};
@@ -651,37 +656,39 @@
 		8D92D32E1D5FA5710026C441 /* headers */ = {
 			isa = PBXGroup;
 			children = (
-				8D92D32B1D5FA4FA0026C441 /* gist.hpp */,
-				8D92DD901D5FD39A0026C441 /* request.hpp */,
-				8D92DE371D5FDFA20026C441 /* logger.hpp */,
+				609E9163E300666C3590A545 /* interface */,
+				609E99BCA88CB26BE7DF019F /* platform */,
 				8D3028051D6A15A9001325E0 /* clipboard.hpp */,
+				609E9396E6E9D64657FA066F /* configuration.hpp */,
+				609E9F693F48C961D9691410 /* file.hpp */,
+				8D92D32B1D5FA4FA0026C441 /* gist.hpp */,
+				609E9434959C6151E3A7616F /* keybinder.hpp */,
+				8D92DE371D5FDFA20026C441 /* logger.hpp */,
 				609E9D7348106B6A7B784B5D /* notification.hpp */,
 				609E94D5F01A1AC06A3DEC73 /* notificationManager.hpp */,
-				609E9396E6E9D64657FA066F /* configuration.hpp */,
-				609E9434959C6151E3A7616F /* keybinder.hpp */,
-				609E99BCA88CB26BE7DF019F /* platform */,
+				8D92DD901D5FD39A0026C441 /* request.hpp */,
 				609E91F74E18B39E229C725C /* screenshot.hpp */,
-				609E9163E300666C3590A545 /* interface */,
-				609E9F693F48C961D9691410 /* file.hpp */,
 				609E956842962B432EB9805F /* uploadhandler.hpp */,
 			);
 			name = headers;
+			path = headers;
 			sourceTree = "<group>";
 		};
 		8D92D32F1D5FA5750026C441 /* source */ = {
 			isa = PBXGroup;
 			children = (
-				8D92DD8F1D5FD39A0026C441 /* request.cpp */,
-				8D92D32A1D5FA4FA0026C441 /* gist.cpp */,
-				609E9F531738C27530D74A7D /* notification.cpp */,
-				609E9C3FE7CA36E739B70F67 /* configuration.cpp */,
-				609E92DADEC9957A5322C9B8 /* keybinder+base.cpp */,
 				609E994870785C9BCDE9FF90 /* platform */,
+				609E9C3FE7CA36E739B70F67 /* configuration.cpp */,
 				609E9C06DFD7BFF470793C58 /* file.cpp */,
+				8D92D32A1D5FA4FA0026C441 /* gist.cpp */,
+				609E92DADEC9957A5322C9B8 /* keybinder+base.cpp */,
+				609E9F531738C27530D74A7D /* notification.cpp */,
+				8D92DD8F1D5FD39A0026C441 /* request.cpp */,
 				609E9B679A9C629E629D7E59 /* screenshot+base.cpp */,
 				609E978D24E802F9C3D60612 /* uploadhandler.cpp */,
 			);
 			name = source;
+			path = source;
 			sourceTree = "<group>";
 		};
 		8D92DE3F1D6098150026C441 /* vendor */ = {

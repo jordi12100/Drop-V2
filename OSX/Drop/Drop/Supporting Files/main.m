@@ -8,8 +8,8 @@
 
 
 #import <Cocoa/Cocoa.h>
-#import "DropApplication.h"
-#import "AppDelegate.h"
+#import "../Extension/DropApplication.h"
+#import "../AppDelegate.h"
 
 int main(int argc, const char * argv[]) {
     NSArray *topLevelObjects;

@@ -109,8 +109,8 @@
 		8D14DE7A1E26D93C006DDEF9 /* xml.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D14DE231E26D93C006DDEF9 /* xml.plist */; };
 		8D14DE9D1E2EA236006DDEF9 /* WindowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D14DE9C1E2EA236006DDEF9 /* WindowView.m */; };
 		8D14DEE71E3E35A2006DDEF9 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D14DEE61E3E35A2006DDEF9 /* JavaScriptCore.framework */; };
-		8D14DF111E3FDF67006DDEF9 /* Fragaria.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609E9513032C41E8408CA186 /* Fragaria.framework */; };
-		8D14DF121E3FDF67006DDEF9 /* Fragaria.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 609E9513032C41E8408CA186 /* Fragaria.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8D14DF111E3FDF67006DDEF9 /* ReferenceProxy in Frameworks */ = {isa = PBXBuildFile; fileRef = 609E9513032C41E8408CA186 /* Fragaria.framework */; };
+		8D14DF121E3FDF67006DDEF9 /* ReferenceProxy in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 609E9513032C41E8408CA186 /* Fragaria.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8D5A0CC91DB2E548005A7067 /* libdrop-x.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D5A0CC81DB2E548005A7067 /* libdrop-x.dylib */; };
 		8D70FEF71E22D44D004867C1 /* NoteWindowController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8D70FEF51E22D44D004867C1 /* NoteWindowController.mm */; };
 		8D70FEF81E22D44D004867C1 /* NoteWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D70FEF61E22D44D004867C1 /* NoteWindowController.xib */; };
@@ -191,7 +191,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				8D14DF121E3FDF67006DDEF9 /* Fragaria.framework in Embed Frameworks */,
+				8D14DF121E3FDF67006DDEF9 /* ReferenceProxy in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,7 +322,7 @@
 		8D5A0CC81DB2E548005A7067 /* libdrop-x.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libdrop-x.dylib"; path = "../../../../Library/Developer/Xcode/DerivedData/Drop-bmnrhpkszxjrkfhfdqxmquehvfeg/Build/Products/Debug/libdrop-x.dylib"; sourceTree = "<group>"; };
 		8D70FEF41E22D44D004867C1 /* NoteWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteWindowController.h; sourceTree = "<group>"; };
 		8D70FEF51E22D44D004867C1 /* NoteWindowController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NoteWindowController.mm; sourceTree = "<group>"; };
-		8D70FEF61E22D44D004867C1 /* NoteWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NoteWindowController.xib; path = Window/NoteWindowController.xib; sourceTree = "<group>"; };
+		8D70FEF61E22D44D004867C1 /* NoteWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NoteWindowController.xib; path = NoteWindowController.xib; sourceTree = "<group>"; };
 		8D84AEA11DAA8A9800299542 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		8DF811CF1DE0E947004BDA4C /* PreferenceGeneralController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferenceGeneralController.h; sourceTree = "<group>"; };
 		8DF811D01DE0E947004BDA4C /* PreferenceGeneralController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferenceGeneralController.m; sourceTree = "<group>"; };
@@ -349,7 +349,7 @@
 				8D14DEE71E3E35A2006DDEF9 /* JavaScriptCore.framework in Frameworks */,
 				8D5A0CC91DB2E548005A7067 /* libdrop-x.dylib in Frameworks */,
 				859BA6BD2F56EE18BDD4CE35 /* libPods-Drop.a in Frameworks */,
-				8D14DF111E3FDF67006DDEF9 /* Fragaria.framework in Frameworks */,
+				8D14DF111E3FDF67006DDEF9 /* ReferenceProxy in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,31 +376,33 @@
 			isa = PBXGroup;
 			children = (
 				609E92E6DED20DC7F8B7EDCD /* HandlerProtocol.h */,
-				609E9FAA43DFE396016E8BD2 /* PreferencesHandler.h */,
+				609E9C4CC73D6EBCB749C377 /* NotesHandler.h */,
 				609E9F5F6716D4E96DA1A11F /* NotesHandler.m */,
+				609E9FAA43DFE396016E8BD2 /* PreferencesHandler.h */,
 				609E9D886EFE729D6D2BCE0E /* PreferencesHandler.mm */,
+				609E94D76A0FAE84B4D508CB /* QuitHandler.h */,
+				609E9446037DDEF79357B591 /* QuitHandler.m */,
+				609E9E8F3B073EE9F962DE4D /* ScreenshotClipboardHandler.h */,
 				609E9247EE912DA08B49FB32 /* ScreenshotClipboardHandler.mm */,
 				609E996961F6A7B494CAD605 /* ScreenshotUploadHandler.h */,
-				609E9C4CC73D6EBCB749C377 /* NotesHandler.h */,
-				609E94D76A0FAE84B4D508CB /* QuitHandler.h */,
-				609E9E8F3B073EE9F962DE4D /* ScreenshotClipboardHandler.h */,
-				609E9446037DDEF79357B591 /* QuitHandler.m */,
 				609E918D3A9C44EF00073D82 /* ScreenshotUploadHandler.mm */,
 			);
 			name = Handlers;
+			path = Handlers;
 			sourceTree = "<group>";
 		};
 		609E92D1BA137AA4E56AA506 /* Initializer */ = {
 			isa = PBXGroup;
 			children = (
+				609E983EEC8B0A94B9C548AB /* ConfigurationInitializer.h */,
+				609E9AAE678AA6C0AE44BC6A /* ConfigurationInitializer.mm */,
 				609E90DDF6CF18AC344E5C28 /* KeybindInitializer.h */,
 				609E9CBF3555958748BA00CA /* KeybindInitializer.mm */,
 				609E96151409BB5FCE1F8805 /* MenuInitializer.h */,
 				609E95A44ADB22948A159A7D /* MenuInitializer.mm */,
-				609E9AAE678AA6C0AE44BC6A /* ConfigurationInitializer.mm */,
-				609E983EEC8B0A94B9C548AB /* ConfigurationInitializer.h */,
 			);
 			name = Initializer;
+			path = Initializer;
 			sourceTree = "<group>";
 		};
 		609E98611CD10E69228BDA4E /* Products */ = {
@@ -420,28 +422,29 @@
 		609E99CDA3CFDBE2B5CDC339 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				609E92918F0BA33BCEF2E75D /* main.m */,
-				8D84AEA11DAA8A9800299542 /* MainMenu.xib */,
 				609E9E1CAB244B573F2F4969 /* Frameworks */,
+				8D84AEA11DAA8A9800299542 /* MainMenu.xib */,
+				609E92918F0BA33BCEF2E75D /* main.m */,
 			);
 			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		609E9B6D18BEE253BA768015 /* Drop */ = {
 			isa = PBXGroup;
 			children = (
-				8DF811DA1DE0F7B5004BDA4C /* Extension */,
-				8DF811CC1DE0E15F004BDA4C /* Views */,
 				8DF811C61DE0E064004BDA4C /* Controller */,
-				609E90D36D5BD242CB00E130 /* Info.plist */,
-				609E9651D5200D329E7C5567 /* Assets.xcassets */,
-				609E9C9DE6A4279718543F89 /* AppDelegate.h */,
-				609E9ADA34A3CB9B0B9B3FA0 /* AppDelegate.mm */,
-				609E99CDA3CFDBE2B5CDC339 /* Supporting Files */,
+				8DF811DA1DE0F7B5004BDA4C /* Extension */,
 				609E91D1ECA7999DF9E8AF11 /* Handlers */,
 				609E92D1BA137AA4E56AA506 /* Initializer */,
-				609E9190978D947E1912F0C3 /* Window */,
+				609E99CDA3CFDBE2B5CDC339 /* Supporting Files */,
 				609E91ADF6D2AA20E1BF8358 /* Vendor */,
+				8DF811CC1DE0E15F004BDA4C /* Views */,
+				609E9190978D947E1912F0C3 /* Window */,
+				609E9C9DE6A4279718543F89 /* AppDelegate.h */,
+				609E9ADA34A3CB9B0B9B3FA0 /* AppDelegate.mm */,
+				609E9651D5200D329E7C5567 /* Assets.xcassets */,
+				609E90D36D5BD242CB00E130 /* Info.plist */,
 			);
 			path = Drop;
 			sourceTree = "<group>";
@@ -451,6 +454,7 @@
 			children = (
 			);
 			name = Frameworks;
+			path = Frameworks;
 			sourceTree = "<group>";
 		};
 		72026A5A45FAC8E3E99D309E /* Pods */ = {
@@ -465,12 +469,12 @@
 		8D0F891C1D5FA46A0071534E = {
 			isa = PBXGroup;
 			children = (
-				8D14DEC01E3D4FB2006DDEF9 /* Misc */,
-				8D14DDCC1E26D93C006DDEF9 /* Syntax Definitions */,
-				8D0F89261D5FA46A0071534E /* Products */,
 				609E9B6D18BEE253BA768015 /* Drop */,
-				72026A5A45FAC8E3E99D309E /* Pods */,
 				8D5A0CC71DB2E548005A7067 /* Frameworks */,
+				8D14DEC01E3D4FB2006DDEF9 /* Misc */,
+				72026A5A45FAC8E3E99D309E /* Pods */,
+				8D0F89261D5FA46A0071534E /* Products */,
+				8D14DDCC1E26D93C006DDEF9 /* Syntax Definitions */,
 				609E9DA29B81BA7A3569EC20 /* Fragaria.xcodeproj */,
 			);
 			sourceTree = "<group>";
@@ -576,7 +580,7 @@
 				8D14DE231E26D93C006DDEF9 /* xml.plist */,
 			);
 			name = "Syntax Definitions";
-			path = "Drop/Vendor/Fragaria/Syntax Definitions";
+			path = "Syntax Definitions";
 			sourceTree = "<group>";
 		};
 		8D14DEC01E3D4FB2006DDEF9 /* Misc */ = {
@@ -611,16 +615,18 @@
 				8DF811CD1DE0E91B004BDA4C /* Preferences */,
 			);
 			name = Controller;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		8DF811CC1DE0E15F004BDA4C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8D70FEF61E22D44D004867C1 /* NoteWindowController.xib */,
 				8DF811D11DE0E947004BDA4C /* PreferenceGeneralController.xib */,
 				8DF811D71DE0E966004BDA4C /* PreferenceKeybindController.xib */,
-				8D70FEF61E22D44D004867C1 /* NoteWindowController.xib */,
 			);
 			name = Views;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		8DF811CD1DE0E91B004BDA4C /* Preferences */ = {
@@ -632,25 +638,27 @@
 				8DF811D61DE0E966004BDA4C /* PreferenceKeybindController.m */,
 			);
 			name = Preferences;
+			path = Preferences;
 			sourceTree = "<group>";
 		};
 		8DF811DA1DE0F7B5004BDA4C /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				8DF811DE1DE113CA004BDA4C /* HyperLinkButton.h */,
-				8DF811DF1DE113CA004BDA4C /* HyperLinkButton.m */,
-				8DF811E11DE11A09004BDA4C /* NSConfigurationField.h */,
-				8DF811E21DE11A09004BDA4C /* NSConfigurationField.mm */,
 				8DF812011DE22BEE004BDA4C /* DropApplication.h */,
 				8DF812021DE22BEE004BDA4C /* DropApplication.m */,
 				8DF812041DE23D11004BDA4C /* DropShortcutView.h */,
 				8DF812051DE23D11004BDA4C /* DropShortcutView.mm */,
+				8DF811DE1DE113CA004BDA4C /* HyperLinkButton.h */,
+				8DF811DF1DE113CA004BDA4C /* HyperLinkButton.m */,
+				609E9FD6B32F1146EE35845F /* LanguageGuesser.h */,
+				609E9A836A2B0DA157A35079 /* LanguageGuesser.m */,
+				8DF811E11DE11A09004BDA4C /* NSConfigurationField.h */,
+				8DF811E21DE11A09004BDA4C /* NSConfigurationField.mm */,
 				8D14DE9B1E2EA236006DDEF9 /* WindowView.h */,
 				8D14DE9C1E2EA236006DDEF9 /* WindowView.m */,
-				609E9A836A2B0DA157A35079 /* LanguageGuesser.m */,
-				609E9FD6B32F1146EE35845F /* LanguageGuesser.h */,
 			);
 			name = Extension;
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

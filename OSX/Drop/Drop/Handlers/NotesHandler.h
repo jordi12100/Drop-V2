@@ -5,7 +5,7 @@
 
 #import <Foundation/Foundation.h>
 #import "HandlerProtocol.h"
-#import "Window/NoteWindowController.h"
+#import "../Window/NoteWindowController.h"
 
 @interface NotesHandler : NSObject<HandlerProtocol>
 

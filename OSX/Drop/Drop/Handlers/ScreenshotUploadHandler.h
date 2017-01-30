@@ -12,7 +12,7 @@
 #import "clipboard.hpp"
 #import "notificationManager.hpp"
 #import "configuration.hpp"
-#import "AppDelegate.h"
+#import "../AppDelegate.h"
 
 @interface ScreenshotUploadHandler : NSObject<HandlerProtocol>
 - (void)handle;

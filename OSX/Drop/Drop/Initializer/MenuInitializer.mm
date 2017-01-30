@@ -4,9 +4,9 @@
 //
 
 #import "MenuInitializer.h"
-#import "HandlerProtocol.h"
+#import "../Handlers/HandlerProtocol.h"
 #import <Carbon/Carbon.h>
-#import "AppDelegate.h"
+#import "../AppDelegate.h"
 #import "configuration.hpp"
 
 @implementation MenuInitializer

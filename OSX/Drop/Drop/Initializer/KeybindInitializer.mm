@@ -5,11 +5,11 @@
 
 #import "KeybindInitializer.h"
 #import "keybinder.hpp"
-#import "NotesHandler.h"
-#import "ScreenshotClipboardHandler.h"
-#import "ScreenshotUploadHandler.h"
+#import "../Handlers/NotesHandler.h"
+#import "../Handlers/ScreenshotClipboardHandler.h"
+#import "../Handlers/ScreenshotUploadHandler.h"
+#import "../AppDelegate.h"
 #import <boost/bind.hpp>
-#import "AppDelegate.h"
 
 Keybinder *keybinder = new Keybinder;
 

@@ -5,8 +5,8 @@
 
 #import <AppKit/AppKit.h>
 #import "PreferencesHandler.h"
-#import "PreferenceGeneralController.h"
-#import "PreferenceKeybindController.h"
+#import "../Controller/Preferences/PreferenceGeneralController.h"
+#import "../Controller/Preferences/PreferenceKeybindController.h"
 #import "MASPreferencesWindowController.h"
 
 @implementation PreferencesHandler

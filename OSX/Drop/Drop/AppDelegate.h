@@ -9,9 +9,9 @@
 #define __drop
 
 #import <Cocoa/Cocoa.h>
-#import "MenuInitializer.h"
-#import "KeybindInitializer.h"
-#import "ConfigurationInitializer.h"
+#import "Initializer/MenuInitializer.h"
+#import "Initializer/KeybindInitializer.h"
+#import "Initializer/ConfigurationInitializer.h"
 
 static NSString *const ConfigurationDidChange = @"configurationDidChange";
 static NSString *const SpinningShouldStart = @"SpinningShouldStart";

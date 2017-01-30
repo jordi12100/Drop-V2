@@ -7,7 +7,7 @@
 //
 
 #import "DropShortcutView.h"
-#import "AppDelegate.h"
+#import "../AppDelegate.h"
 
 static const CGFloat MASHintButtonWidth = 23;
 

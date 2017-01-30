@@ -1,0 +1,9 @@
+ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/boost" $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/CCNLaunchAtLoginItem" "${PODS_ROOT}/Headers/Public/MASPreferences" "${PODS_ROOT}/Headers/Public/MASShortcut" "${PODS_ROOT}/Headers/Public/Masonry" "${PODS_ROOT}/Headers/Public/SYFlatButton" "${PODS_ROOT}/Headers/Public/boost"
+LIBRARY_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/CCNLaunchAtLoginItem" "$PODS_CONFIGURATION_BUILD_DIR/MASPreferences" "$PODS_CONFIGURATION_BUILD_DIR/MASShortcut" "$PODS_CONFIGURATION_BUILD_DIR/Masonry" "$PODS_CONFIGURATION_BUILD_DIR/SYFlatButton"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/CCNLaunchAtLoginItem" -isystem "${PODS_ROOT}/Headers/Public/MASPreferences" -isystem "${PODS_ROOT}/Headers/Public/MASShortcut" -isystem "${PODS_ROOT}/Headers/Public/Masonry" -isystem "${PODS_ROOT}/Headers/Public/SYFlatButton" -isystem "${PODS_ROOT}/Headers/Public/boost"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"CCNLaunchAtLoginItem" -l"MASPreferences" -l"MASShortcut" -l"Masonry" -l"SYFlatButton" -framework "AppKit" -framework "Carbon" -framework "Foundation"
+PODS_BUILD_DIR = $BUILD_DIR
+PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_ROOT = ${SRCROOT}/Pods

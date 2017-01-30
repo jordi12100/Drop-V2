@@ -1,0 +1,41 @@
+PODS:
+  - boost (1.59.0):
+    - boost/graph-includes (= 1.59.0)
+    - boost/math-includes (= 1.59.0)
+    - boost/numeric-includes (= 1.59.0)
+    - boost/pointer_cast-includes (= 1.59.0)
+    - boost/preprocessor-includes (= 1.59.0)
+    - boost/shared_ptr-includes (= 1.59.0)
+    - boost/string_algorithms-includes (= 1.59.0)
+  - boost/graph-includes (1.59.0)
+  - boost/math-includes (1.59.0)
+  - boost/numeric-includes (1.59.0)
+  - boost/pointer_cast-includes (1.59.0)
+  - boost/preprocessor-includes (1.59.0)
+  - boost/shared_ptr-includes (1.59.0)
+  - boost/string_algorithms-includes (1.59.0)
+  - CCNLaunchAtLoginItem (0.1.0)
+  - Masonry (1.0.2)
+  - MASPreferences (1.1.4)
+  - MASShortcut (2.3.5)
+  - SYFlatButton (1.2)
+
+DEPENDENCIES:
+  - boost
+  - CCNLaunchAtLoginItem
+  - Masonry
+  - MASPreferences
+  - MASShortcut
+  - SYFlatButton
+
+SPEC CHECKSUMS:
+  boost: 30a15ffb6d9aa4646dd3caffc960753f4cb4ca4e
+  CCNLaunchAtLoginItem: 84638e22b5e50f861600eed9440d4a0c3d5a8f27
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  MASPreferences: 7bdcfe891d7840453cf48f95fa866c3e152ace7a
+  MASShortcut: 75714289ac908acb82ad2df900eadb9a4ed6b7b5
+  SYFlatButton: cc8b2eb1d123fb196f42b922a47802c03abc602a
+
+PODFILE CHECKSUM: f7b245f314020ccb90cfcfababf694c9eec94814
+
+COCOAPODS: 1.1.0.rc.3
